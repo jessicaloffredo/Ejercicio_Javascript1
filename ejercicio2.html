@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conversion de moneda Euro-Libra</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" media="screen"/>
+        <script type="text/javascript">
+            function eurosLibra(valNum) {
+                document.getElementById("inputLibra").value=valNum*0.85;
+            }
+
+            function libraEuros(valNum) {
+                document.getElementById("inputEuros").value=valNum*1.1;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h2>Conversor de moneda.</h2>
+        <form>
+        <p id="euro">
+        <label>Euros</label><br><br>
+        <input id="inputEuros" type="number" placeholder="Euros" oninput="eurosLibra(this.value)" onchange="eurosLibra(this.value)"> € 
+        </p>
+        <p id="conv"><img src="conv.png"></p>
+        <p id="libra">
+        <label>Libra</label><br><br>
+        <input id="inputLibra" type="number" placeholder="Libras" oninput="libraEuros(this.value)" onchange="librasEuros(this.value)"> £
+        </p>
+        <p id="reset"><input type="reset" value="Reset"></p>
+        </form>
+        
+    </body>
+    
+</html>

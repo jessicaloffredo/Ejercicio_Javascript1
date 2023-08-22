@@ -1,0 +1,32 @@
+h2 {
+    color: blueviolet;
+}
+
+#euro {
+    float: left;
+}
+
+#libra {
+    float: left;
+} 
+
+#conv {
+    float: left;
+} 
+
+#reset {
+    float: left;
+    width: 100%;
+} 
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+
+label {
+    padding: 5px;
+    border: 2px solid rgb(13, 255, 0);
+    border-radius: 4px;
+}
